@@ -1,0 +1,145 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+
+/* Carousel base class */
+<style>
+  /* Estilos para el carrusel */
+  #myCarousel {
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+
+  .carousel-item {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 400px; /* Ajusta la altura del carrusel */
+    position: relative; /* Para posicionar el texto relativo al contenedor */
+  }
+
+  .carousel-item img {
+    width: 40%; /* Ajusta el ancho de las imágenes al 40% */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen */
+  }
+
+  .carousel-caption {
+    position: absolute; /* Asegúrate de que el texto no se superponga */
+    bottom: 20px; /* Espacio desde el fondo */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    color: white; /* Cambia el color del texto si es necesario */
+    text-align: center; /* Centra el texto */
+  }
+
+  .logo {
+    width: 20%; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+  }
+</style>
+
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container text-center">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnEc73qCOSaNlnCUPOXK0VpV5OGOLKfWDBllOtXQ9iEVwS73TRWLMAjvS-7ySmSPeSs0RU9gg4ABjpHTt30t7ymACd4jYINTtpgRKsprutr0vbEfys8ADQ1f2kUdkSQTpol36qYYPMkqCfMiJ0DwrvQKapl1FJCPyAdf_E3wSQNxilhZ8sgJqBjdinWaGX/s320/9.png" alt="Imagen de ejemplo" class="bd-placeholder-img rounded-circle">
+        <div class="carousel-caption">
+          <h5>Te enseñaremos ingles basico con videos, ejercicios y juegs para practicar.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container text-center">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.s890qyWTRLdHMq1kiFC3zwAAAA&pid=Api&P=0&h=180" alt="Logo" class="logo">
+        <div class="carousel-caption">
+          <h5>Escuela Proa de Cruz Del Eje.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+
+
+/* Featurettes
+------------------------- */
+
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+
+/* rtl:end:remove */
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
